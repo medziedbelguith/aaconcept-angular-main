@@ -1,0 +1,237 @@
+<app-sliderpage name="Contact"></app-sliderpage>
+
+
+<section id="slider" style=" margin-top: 56px;">
+    <div class="container slider-1">
+
+       
+        
+        <div class="col-sm-12" id="content" style="background-color: rgba(255, 255, 255, 0.685); margin:0px auto; padding:30px 10px;">
+            <h2 style="color:black; text-align: center;">Un projet ? Une question ? <br>
+              Nous vous répondrons ou rappellerons dans les 24 heures.</h2>
+            <br><br>
+           
+            <form class="form-horizontal">
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group required">
+                    <label for="input-name" class=" control-label">Nom + Prénom</label>
+                    <div class="">
+                      <input type="text" class="form-control"  id="input-name" value="" name="name" [(ngModel)]="request.name">
+                    </div>
+                  </div>
+                  <br>
+                  <div class="form-group required">
+                    <label for="input-name" class=" control-label">Adresse</label>
+                    <div class="">
+                      <input type="text" class="form-control"  id="input-name" value="" name="name" [(ngModel)]="request.adresse">
+                    </div>
+                  </div>
+                  <br>
+                  <div class="form-group required">
+                    <label for="input-name" class=" control-label">Code postal</label>
+                    <div class="">
+                      <input type="text" class="form-control"  id="input-name" value="" name="name" [(ngModel)]="request.codePostal">
+                    </div>
+                  </div>
+                  <br>
+                  <div class="form-group required">
+                    <label for="input-name" class=" control-label">Ville</label>
+                    <div class="">
+                      <input type="text" class="form-control"  id="input-name" value="" name="name" [(ngModel)]="request.ville">
+                    </div>
+                  </div>
+                  
+                  <br>
+                  <div class="form-group required">
+                    <label for="input-email" class="control-label">E-Mail </label>
+                    <div class="">
+                      <input type="email" class="form-control"  id="email" value="" name="email" [(ngModel)]="request.email">
+                      <p *ngIf="erreurRequest.email != ''" style="color:red; font-size: 12px;">{{erreurRequest.email}}</p>
+     
+                    </div>
+                  </div>
+                  <br>
+                  <div class="form-group required">
+                    <label for="input-enquiry" class="control-label">Téléphone</label>
+                    <div class="">
+                      <input type="text" class="form-control"  id="telephone" value="" name="name" [(ngModel)]="request.telephone">
+                      <p *ngIf="erreurRequest.telephone != ''" style="color:red;font-size: 12px;">{{erreurRequest.telephone}}</p>
+                
+                    </div>
+                  </div>
+                  
+                 
+                </div>
+                <div class="col-sm-6">
+                  <h4>Votre projet concerne :</h4>
+                  <div class="form-check">
+                    <input name="Nettoyage & Hydrofuge de toiture et façade" class="form-check-input" type="checkbox" value="" id="defaultCheck1" (click)="clickProjets($event)">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Nettoyage & Hydrofuge de toiture et façade
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input name="Sanitaire" class="form-check-input" type="checkbox" value="" id="defaultCheck2" (click)="clickProjets($event)">
+                    <label class="form-check-label" for="defaultCheck2">
+                      Sanitaire
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input name="placo-platre" class="form-check-input" type="checkbox" value="" id="defaultCheck3" (click)="clickProjets($event)">
+                    <label class="form-check-label" for="defaultCheck3">
+                      placo-platre
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input name="isolation" class="form-check-input" type="checkbox" value="" id="defaultCheck4" (click)="clickProjets($event)">
+                    <label class="form-check-label" for="defaultCheck4">
+                      isolation
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input name="Rénovation totale" class="form-check-input" type="checkbox" value="" id="defaultCheck5" (click)="clickProjets($event)">
+                    <label class="form-check-label" for="defaultCheck5">
+                      Rénovation totale
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input name="cloisons sèches" class="form-check-input" type="checkbox" value="" id="defaultCheck6" (click)="clickProjets($event)">
+                    <label class="form-check-label" for="defaultCheck6">
+                      cloisons sèches
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input name="revêtements de sol" class="form-check-input" type="checkbox" value="" id="defaultCheck7" (click)="clickProjets($event)">
+                    <label class="form-check-label" for="defaultCheck7">
+                      revêtements de sol
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input name="carrelage" class="form-check-input" type="checkbox" value="" id="defaultCheck8" (click)="clickProjets($event)">
+                    <label class="form-check-label" for="defaultCheck8">
+                      carrelage
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input name="parquet" class="form-check-input" type="checkbox" value="" id="defaultCheck9" (click)="clickProjets($event)">
+                    <label class="form-check-label" for="defaultCheck9">
+                      parquet
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input name="peinture" class="form-check-input" type="checkbox" value="" id="defaultCheck10" (click)="clickProjets($event)">
+                    <label class="form-check-label" for="defaultCheck10">
+                      peinture
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input name="décoration" class="form-check-input" type="checkbox" value="" id="defaultCheck11" (click)="clickProjets($event)">
+                    <label class="form-check-label" for="defaultCheck11">
+                      décoration
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input name="électricité" class="form-check-input" type="checkbox" value="" id="defaultCheck12" (click)="clickProjets($event)">
+                    <label class="form-check-label" for="defaultCheck12">
+                      électricité
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input name="Crepi" class="form-check-input" type="checkbox" value="" id="defaultCheck13" (click)="clickProjets($event)">
+                    <label class="form-check-label" for="defaultCheck13">
+                      Crepi
+                    </label>
+                  </div>
+                 
+                  <div class="form-group required">
+                    <label for="input-enquiry" class="control-label">Message</label>
+                    <div class="">
+                      <textarea class="form-control" id="input-enquiry"  rows="3" name="enquiry" [(ngModel)]="request.message"></textarea>
+                    </div>
+                  </div>
+        
+                 
+                  
+          
+                </div>
+
+                <div class="buttons">
+                  <br>
+                  <div style="text-align: center;">
+                    <input *ngIf="!isLoading" type="submit" value="Envoyer" class="btn btn-primary" (click)="controleInput()">
+                    <button *ngIf="isLoading" class="btn btn-primary" type="button" disabled>
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                      Chargement...
+                    </button>
+                  </div>
+                </div>
+              </div>
+                
+             
+             
+      
+
+           
+      
+            </form>
+      
+            <br>
+            <br>
+            
+          
+         
+          </div>
+       
+    
+    </div>
+</section>
+
+
+<section id="slider" style=" margin-top: 56px; background-color: rgba(0,0,0,0.05) !important;">
+  <div class="container" >
+
+     <div class="col-sm-12" id="content" style=" margin:0px auto; padding:30px 10px;">
+     
+      <div class="row">
+        <div class="col-sm-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11046.97163744175!2d6.215172189417566!3d46.195674465860726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6fd432ec967f%3A0x408ab2ae4baa630!2sAmbilly%2C%20France!5e0!3m2!1sfr!2stn!4v1638309006273!5m2!1sfr!2stn" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         
+        </div>
+        <div class="col-sm-6">
+         
+          <img src="./assets/images/Untitled-2.png" class="img-fluid" alt="">
+        
+            <br> <br>
+         
+            <p><strong>Tél: </strong>  06 45 35 96 66, 06 89 96 92 92</p>
+
+          
+            <p><strong>Mail: </strong>  info@aaconcept-renov.com</p>
+        
+          
+            <p><strong>Adresse:  </strong> Ambilly 74 100</p>
+          <div class="address">  </div>
+          
+          <p><strong>Pays:</strong> France</p>
+        
+         </div>
+      </div>
+     
+    </div>
+     
+  
+  </div>
+</section>

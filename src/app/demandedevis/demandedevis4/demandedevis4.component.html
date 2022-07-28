@@ -1,0 +1,73 @@
+<div class="col-12">
+    <h4> 4- Compléter vos coordonnées</h4>
+
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Votre Nom" [(ngModel)]="request.firstName" id="firstName">
+        <p *ngIf="erreurRequest.firstName != ''" style="color:red;">{{erreurRequest.firstName}}</p>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Votre Prénom" [(ngModel)]="request.lastName" id="lastName">
+        <p *ngIf="erreurRequest.lastName != ''" style="color:red;">{{erreurRequest.lastName}}</p>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Votre Téléphone 1" [(ngModel)]="request.telephone1" id="telephone1">
+        <p *ngIf="erreurRequest.telephone1 != ''" style="color:red;">{{erreurRequest.telephone1}}</p>
+     
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Votre Téléphone 2"  [(ngModel)]="request.telephone2" id="telephone2">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Votre Email" [(ngModel)]="request.email" id="email">
+        <p *ngIf="erreurRequest.email != ''" style="color:red;">{{erreurRequest.email}}</p>
+     
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Votre Adresse" [(ngModel)]="request.adresse" id="adresse">
+        <p *ngIf="erreurRequest.adresse != ''" style="color:red;">{{erreurRequest.adresse}}</p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+      <label class="form-check-label" for="inlineCheckbox1">
+        J'accepte les Conditions Générales d'Utilisation et la Charte sur la protection des données
+        personnelles
+      </label>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+      <label class="form-check-label" for="inlineCheckbox1">
+        J'accepte de recevoir des communications par voie électronique sur des offres de produits ou services
+        d'Habitatpresto
+      </label>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+      <label class="form-check-label" for="inlineCheckbox1">
+        J'accepte de recevoir des communications par voie électronique sur des offres de produits ou services
+        de Partenaires </label>
+    </div>
+
+    <br><br>
+
+    <button *ngIf="!isLoading" type="button" class="btn btn-primary" style="margin-right: 10px;"
+      (click)="showDivs(2)">Précédent</button>
+    <button *ngIf="!isLoading" type="button" class="btn btn-primary" (click)="setCoordonnees2()">Demande Devis</button>
+
+    <button *ngIf="isLoading" class="btn btn-primary" type="button" disabled>
+      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+      Chargement...
+  </button>
+  </div>

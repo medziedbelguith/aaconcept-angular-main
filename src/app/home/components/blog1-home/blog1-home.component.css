@@ -1,0 +1,11 @@
+.sub-titlehny{    
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #cacaca;
+    text-transform: uppercase;
+}
+
+.img-fluid{
+    border-radius: 15px;
+}

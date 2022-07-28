@@ -1,0 +1,66 @@
+.navbar-9{
+    float:right;
+    margin: 18px 22px;
+   
+    font-family: Raleway, sans-serif;
+    line-height: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    text-transform: inherit !important;
+    color: rgb(19, 15, 255) !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    background: rgb(202, 202, 202);
+    padding: 22px 32px;
+    border-radius: 0px;
+    transition: color 0.4s linear 0s;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    overflow: hidden;
+}
+
+.slider-1{
+    position: relative;
+}
+
+.slider-2{
+   padding: 20vw 10vw;
+}
+
+.slider-3{
+    background-color: #3a3af7;
+    padding: 20px;
+}
+
+
+.slider-4{
+    background-color: white;
+}
+
+.slider-3 h1{
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.slider-4 h1{
+    color: #3a3af7;
+}
+
+p{
+    font-size: 20px;
+}
+
+strong{
+    font-size: 20px;
+}
+
+.erreur{
+    border: red solid 1px;
+}
+
+img{
+    height: 150px;
+}

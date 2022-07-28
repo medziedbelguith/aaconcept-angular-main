@@ -1,0 +1,82 @@
+<app-sliderpage name="Demande Devis"></app-sliderpage>
+
+<br><br>
+
+<div class="container" style="text-align: center;">
+  <div class="row">
+
+    <div class="col-lg-3">
+    </div>
+
+    <div class="col-lg-6">
+      <div class="content">
+
+      
+      <div class="row style-ligne">
+
+        <div class="col-4 icon-top">
+          <span> <i class="fas fa-home"></i> </span>
+          <div style="background-color: green;"></div>
+          <p *ngIf="request.typeTravaux == ''">1 - Le type de vos travaux</p>
+          <p *ngIf="request.typeTravaux != ''">1 - {{request.typeTravaux}}</p>
+        
+        </div>
+
+      <!--  <div class="col-3 icon-top">
+          <span><i class="fas fa-box-open"></i></span>
+          <div></div>
+       
+          <div *ngIf="slideIndex > 1" style="background-color: green;"></div>
+          <p  *ngIf="request.natureTravaux == ''">2 - La nature de vos travaux</p>
+          <p  *ngIf="request.natureTravaux != ''">2 - {{request.natureTravaux}}</p>
+    
+        </div>-->
+
+        <div class="col-4 icon-top">
+          <span><i class="fas fa-clipboard-check"></i></span>
+          <div></div>
+       
+          <div *ngIf="slideIndex > 2" style="background-color: green;"></div>
+          <p>3 - Votre projet</p>
+        </div>
+
+        <div class="col-4 icon-top" id="slider">
+          <span><i class="far fa-comment-dots"></i></span>
+          <div></div>
+          <div *ngIf="slideIndex > 3" style="background-color: green;"></div>
+         
+          <span style="float:right;"><i class="far fa-handshake"></i></span>
+          <p>4 - Vos coordonnées</p>
+        </div>
+
+        <!-- debut slider -->
+        <div class="slider-formulaire col-12" >
+          <div class="block1">
+             <app-demandedevis1 (showDivsEvent)="showDivs($event)" (setTypeTravaux2)="setTypeTravaux($event)"></app-demandedevis1>
+          </div>
+
+         <!-- <div class="block1">
+            <app-demandedevis2 (showDivsEvent)="showDivs($event)" (setNatureTravaux)="setNatureTravaux($event)" ></app-demandedevis2>
+          </div>-->
+
+          <div class="block1">
+            <app-demandedevis3 (showDivsEvent)="showDivs($event)" (setProjet)="setProjet($event)" ></app-demandedevis3>
+          </div>
+
+          <div class="block1">
+            <app-demandedevis4 [isLoading]="isLoading" (showDivsEvent)="showDivs($event)" (setCoordonnees)="setCoordonnees($event)"></app-demandedevis4>
+          </div>
+
+        </div>
+        <!-- fin slider -->
+
+      </div>
+      </div>
+      <div class="col-lg-3">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<br><br>

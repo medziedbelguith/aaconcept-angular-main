@@ -1,0 +1,27 @@
+ul{
+    list-style: decimal;
+    color: honeydew;
+    margin-top: 1em;
+}
+
+ul li{
+   
+   width: 100%;
+   text-align: center;
+   margin-top: 15px;
+}
+
+ul li a{
+    padding:0px 30px;
+    text-align: center;
+    width: 100% !important;
+    color: honeydew;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 2px white, 0 0 1em rgb(4, 109, 4), 0 0 1em rgb(9, 95, 9);
+ }
+
+ ul li a:hover{
+    text-shadow: 1px 1px 2px white, 0 0 1em rgb(6, 216, 6), 0 0 1em rgb(15, 218, 15);
+
+ }

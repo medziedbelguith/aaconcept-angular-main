@@ -1,0 +1,79 @@
+.grid-block{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sub-titlehny{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #cacaca;
+    text-transform: uppercase;
+}
+
+.hny-title{
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 17px;
+    line-height: 26px;
+    color: #0f0f0f;
+    font-family: 'Barlow', sans-serif;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Comforter Brush', cursive;
+}
+
+a span{
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: #fe5a0e;
+}
+
+a h4{
+    font-size: 26px;
+    line-height: 35px; 
+    color: #000;
+    margin-top: 1rem !important; 
+    text-decoration: none;  
+}
+
+a{
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.grid-block{
+    border-radius: 15px;
+}
+
+a:hover{
+    background-color: #fe5a0e;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+@keyframes example {
+    0%   {background-color: white;}
+    100% {background-color: #fe5a0e;}
+  }
+
+a:hover p{
+    color: white;
+}
+
+
+a:hover span{
+    color: white;
+}
+
+.img-fluid{
+    height: 100px;
+}

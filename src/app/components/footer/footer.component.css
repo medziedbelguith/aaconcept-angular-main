@@ -1,0 +1,146 @@
+.w3l-footer-29-main p{
+    color: white;
+}
+
+.w3l-footer-29-main a{
+    color: white;
+    margin-left: 5px;
+}
+
+
+
+.w3l-footer-29-main h4{
+    color: white;
+}
+
+.w3l-footer-29-main ul{
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    padding-left: 0px !important;
+}
+
+.w3l-footer-29-main li{
+    float:left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.w3l-footer-29-main ul a{
+    width: 100%;
+    color: #C2C5DB;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: underline transparent;
+}
+
+h6{
+    color: #C2C5DB;   
+}
+
+.footer-22{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.459), #77BB0C), url(/assets/images/banner1.jpg) center no-repeat;
+    
+}
+
+.class1-footer h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.class1-footer p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color:white;
+}
+
+.footer-button {
+    text-decoration: none;
+    border: 0.15em solid #fff;
+    background: none;
+    color: #fff;
+    font: Montserrat, sans-serif;
+    padding: 0.37em 1.4em 0.3em;
+    cursor: pointer;
+    transition: background 2s, color .4s;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer-button:hover {
+    background: white;
+    color: green;
+}
+
+.class2-footer{
+    color: white;
+    text-align: center;
+}
+
+.class2-footer a{
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.class3-footer{
+    color: white;
+    text-align: center;
+}
+
+.class3-footer img{
+    width: 40px;
+}
+
+.class3-footer a{
+    margin: 10px;
+}
+
+.class3-footer a:hover{
+    background-color: black;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.class4-footer{
+    text-align: center;
+}
+
+.class4-footer h6{
+    color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.class4-footer p{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    line-height: 28px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.footer-title-29{
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.footer-list-29 a{
+    font-size: 20px !important;
+    color: #ffffff !important;
+    font-weight: 500;
+    
+}

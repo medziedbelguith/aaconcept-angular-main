@@ -1,0 +1,194 @@
+.icon-top{
+    padding: 0px;
+    position: relative;
+ }
+ 
+ .style-ligne span{
+     float: left;
+     font-size: 30px;
+     font-weight: 700;
+     font-family: cursive;
+ }
+ 
+ .style-ligne{
+     overflow: hidden;
+     position: relative;
+ }
+ 
+ .icon-top div{
+     border:green solid 2px;
+     width: 100%;
+     height: 10px;
+     margin-top: 20px; 
+     position: absolute;
+     top: 20px !important;
+ }
+ 
+ .icon-top p{
+     margin-top: 60px;
+     font-family: cursive;
+ }
+ 
+ /*images - 1*/
+ .sub-titlehny{
+     font-size: 20px;
+     font-weight: 600;
+     margin-bottom: 12px;
+     color: #cacaca;
+     text-transform: uppercase;
+ }
+ 
+ 
+ .hny-title{
+     font-size: 34px;
+     font-weight: 600;
+     line-height: 40px;
+     margin-bottom: 20px;
+ }
+ 
+ 
+ .block1 p{  
+     color: #9b9b9b;
+     font-size: 18px;
+     line-height: 26.5px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 5px;
+     max-width: 760px;
+ }
+ 
+ .img-fluid{
+     max-height: 200px;
+     transition: transform 1s;
+ }
+ 
+ .galler-top{
+     margin-top: 30px !important;
+ }
+ 
+ figure{
+     position: relative;
+     overflow: hidden;
+ }
+ 
+ .style-animation-image{
+     z-index:3;
+     position: absolute;
+     left:0px; 
+     top:0px;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.356); 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+     visibility: visible;
+     opacity: 1; 
+     transition: visibility 0s, opacity 1s linear;
+ }
+ 
+ figure:hover .style-animation-image{
+     visibility: hidden;
+     opacity: 0;
+ }
+ 
+ .style-animation-text{
+     font-weight: 700;
+     font-size: 2.5vw;   
+     color: white;
+ }
+ 
+ figure:hover .img-fluid{
+     transform: scale(1.5);
+ }
+ 
+ /*images - 1*/
+ 
+ label{
+     font-weight: 500;
+     font-size: 17px;
+     font-family: cursive;
+ }
+ 
+ h4{
+     font-family: cursive;
+ }
+ 
+ .slider-formulaire{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     padding:0px;
+ }
+ 
+ .block1{
+     width: 100% !important;
+     transition: transform 1000ms ease-in-out;
+     position: relative;
+     flex-shrink: 0;
+     overflow: hidden;
+ }
+ 
+ .icon-list div{
+     background-color: rgb(21, 228, 21);
+     text-align: center;
+    
+     
+ }
+ 
+ .icon-list p{
+     color: white;
+     font-size: 13px;
+     font-weight: 500;
+ }
+ 
+ .icon-list img{
+     width: 50px;
+     transition: transform .2s; /* Animation */
+ }
+ 
+ .icon-list{
+     padding: 5px;
+     display: inline-block;
+ }
+ 
+ .icon-list div:hover{
+     background-color: rgb(7, 63, 7);
+ }
+ /*.icon-list div:hover img{
+     transform: scale(1.2);
+ }*/
+ 
+ .icon-list2 div{
+     background-color: rgb(218, 221, 35);
+     text-align: center;
+ }
+ 
+ .icon-list2 p{
+     color: white;
+     font-size: 13px;
+     font-weight: 500;
+ }
+ 
+ .icon-list2 img{
+     width: 50px;
+     transition: transform .2s; /* Animation */
+ }
+ 
+ .icon-list2{
+     padding: 5px;
+     display: inline-block;
+ }
+ 
+ .icon-list2 div:hover{
+     background-color: rgb(116, 117, 20);
+ }
+ 
+ /*.icon-list2 div:hover img{
+     transform: scale(1.1);
+ }*/
+
+ .erreur{
+     border: red solid 1px;
+ }

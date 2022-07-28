@@ -1,0 +1,33 @@
+.conteneur-items{
+    width: 100%; 
+    overflow-x: hidden; 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.w3-button{
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: rgba(#ffffff, 0.8);
+    text-shadow: 1px 1px 1px #1f1e1e;
+    border-radius: 25%;
+    background-color: white;
+    border: solid 3px black;
+    font-weight: 800;
+    height: 50px;
+}
+  
+.w3-button:hover {
+    color: white;
+    text-shadow: 2px 2px 3px #1f1e1e;
+}
+
+.item-partenaire{
+    transition: transform 1000ms ease-in-out;
+    position: relative;
+    flex-shrink: 0;
+}
+
